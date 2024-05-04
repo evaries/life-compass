@@ -25,6 +25,19 @@ import ScrollButton from '../components/scroll-button.astro'
 		/>
 		<meta name="author" content="Yevhenii Nadtochii" />
 		<meta name="robots" content="index, follow" />
+		<script
+			type="text/partytown"
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-8YFT1LE5JR"></script>
+		<script type="text/partytown">
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+
+			gtag('config', 'G-8YFT1LE5JR')
+		</script>
 	</head>
 	<body>
 		<Header />
