@@ -30,6 +30,19 @@
 		margin-top: 10px;
 	}
 
+	.nav {
+		@apply font-bold underline hover:text-orange-600;
+	}
+
+	.nav {
+		text-decoration: underline;
+		font-family: 'Montserrat Variable', sans-serif;
+
+		& :hover {
+			color: #cc2a42;
+		}
+	}
+
 	h1 {
 		font-family: 'Montserrat Variable', sans-serif;
 		font-size: 3rem;
@@ -42,13 +55,15 @@
 		font-size: 2rem;
 		line-height: 2rem;
 		font-weight: 800;
+		text-align: center;
 	}
 
 	h3 {
 		font-family: 'Montserrat Variable', sans-serif;
 		font-size: 1.5rem;
-		line-height: 1rem;
+		line-height: 1.8rem;
 		font-weight: 700;
+		text-align: center;
 	}
 }
 

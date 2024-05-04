@@ -3,6 +3,7 @@ import Header from '../components/header.astro'
 import Footer from '../components/footer.astro'
 import '../styles/global.css'
 import '@fontsource-variable/montserrat'
+import ScrollButton from '../components/scroll-button.astro'
 ---
 
 <html lang="en">
@@ -16,6 +17,7 @@ import '@fontsource-variable/montserrat'
 	<body>
 		<Header />
 		<slot />
+		<ScrollButton />
 		<Footer />
 	</body>
 </html>

@@ -5,11 +5,13 @@ const linkStyle = 'underline hover:text-orange-600 mt-2 block'
 
 <MainLayout>
 	<section class="flex flex-col items-center justify-center">
-		<h1 class="mt-60 text-center">Find your North Star in life</h1>
+		<h1 class="mt-44 text-center">Find your North Star in life</h1>
 		<p class="text-l mt-10 text-center">
 			A guide to finding purpose, creating a vision and building the lifestyle you dream of
 		</p>
-		<a href="/guide" class="mt-10 rounded bg-gray-800 px-3 py-2 text-gray-50">Go to guide</a>
+		<a href="/guide" class="mt-10 rounded bg-gray-800 px-3 py-2 text-gray-50 hover:bg-gray-900"
+			>Go to guide</a
+		>
 		<h2 class="mt-40">Does it sound familiar?</h2>
 		<div class="mt-6">
 			<p class="mb-2">
@@ -90,7 +92,7 @@ const linkStyle = 'underline hover:text-orange-600 mt-2 block'
 		</p>
 		<div class="mt-4 flex w-full flex-col justify-evenly">
 			<div class="mt-5 w-fit">
-				<a class={linkStyle} href="/guide#audit"><h3>Audit</h3></a>
+				<a class={linkStyle} href="/guide#audit"><h3 class="text-left">Audit</h3></a>
 				<ul class="mt-4">
 					<a class={linkStyle} href="/guide#life-audit"><li>1. Life audit</li></a>
 					<a class={linkStyle} href="/guide#work-audit"><li>2. Work audit</li></a>
@@ -101,8 +103,8 @@ const linkStyle = 'underline hover:text-orange-600 mt-2 block'
 					<a class={linkStyle} href="/guide#honest-people"><li>5. Ask honest people</li></a>
 				</ul>
 			</div>
-			<div class="ml-[40%] mt-5 w-fit">
-				<a class={linkStyle} href="/guide#vision"><h3>Vision</h3></a>
+			<div class="ml-0 mt-5 w-fit md:ml-[45%]">
+				<a class={linkStyle} href="/guide#vision"><h3 class="text-left">Vision</h3></a>
 				<ul class="mt-4">
 					<a class={linkStyle} href="/guide#how-to-want"
 						><li>1. How do you want to life 10 years from now</li></a
@@ -125,7 +127,7 @@ const linkStyle = 'underline hover:text-orange-600 mt-2 block'
 				</ul>
 			</div>
 			<div class="mt-5 w-fit">
-				<a class={linkStyle} href="/guide#path"><h3>Path</h3></a>
+				<a class={linkStyle} href="/guide#path"><h3 class="text-left">Path</h3></a>
 				<ul class="mt-4">
 					<a class={linkStyle} href="/guide#categories"><li>1. Define categories to improve</li></a>
 					<a class={linkStyle} href="/guide#roadmap"
@@ -144,7 +146,7 @@ const linkStyle = 'underline hover:text-orange-600 mt-2 block'
 				</ul>
 			</div>
 		</div>
-		<div class="m-auto mb-10 mt-5 w-fit">
+		<div class="m-auto mb-10 mt-10 w-fit">
 			<a class={linkStyle} href="/guide#conclusion"><h3>TL;DR. Conclusion</h3></a>
 		</div>
 	</section>
