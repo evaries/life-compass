@@ -4,6 +4,8 @@ import Footer from '../components/footer.astro'
 import '../styles/global.css'
 import '@fontsource-variable/montserrat'
 import ScrollButton from '../components/scroll-button.astro'
+const socialImageURL = new URL('/social-card.png', Astro.url).href
+const canonicalURL = new URL(Astro.url.pathname, Astro.url)
 ---
 
 <html lang="en">
@@ -25,6 +27,33 @@ import ScrollButton from '../components/scroll-button.astro'
 		/>
 		<meta name="author" content="Yevhenii Nadtochii" />
 		<meta name="robots" content="index, follow" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Find Your North Star in Life: A Guide to Purpose & Vision" />
+		<meta
+			property="og:description"
+			content="Discover how to find your purpose, create a vision, and build the lifestyle you dream of with this comprehensive guide."
+		/>
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:site_name" content="/" />
+		<meta property="og:locale" content="en" />
+		<meta property="og:image" content={socialImageURL} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={canonicalURL} />
+		<meta
+			property="twitter:title"
+			content="Find Your North Star in Life: A Guide to Purpose & Vision"
+		/>
+		<meta
+			property="twitter:description"
+			content="Discover how to find your purpose, create a vision, and build the lifestyle you dream of with this comprehensive guide."
+		/>
+		<meta property="twitter:image" content={socialImageURL} />
 		<script
 			type="text/partytown"
 			async
