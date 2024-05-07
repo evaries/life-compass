@@ -4,8 +4,10 @@ import Footer from '../components/footer.astro'
 import '../styles/global.css'
 import '@fontsource-variable/montserrat'
 import ScrollButton from '../components/scroll-button.astro'
-const socialImageURL = new URL('/social-card.png', Astro.url).href
-const canonicalURL = new URL(Astro.url.pathname, Astro.url)
+// const socialImageURL = new URL('/social-card.png', Astro.url).href
+const socialImageURL = "https://life-compass.netlify.app/social-card.png"
+// const canonicalURL = new URL(Astro.url.pathname, Astro.url)
+const canonicalURL = "https://life-compass.netlify.app"
 ---
 
 <html lang="en">
@@ -38,7 +40,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.url)
 		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:site_name" content="/" />
 		<meta property="og:locale" content="en" />
-		<meta property="og:image" content="/social-card.png" />
+		<meta property="og:image" content={socialImageURL} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 
@@ -53,7 +55,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.url)
 			property="twitter:description"
 			content="Discover how to find your purpose, create a vision, and build the lifestyle you dream of with this comprehensive guide."
 		/>
-		<meta property="twitter:image" content="social-card.png" />
+		<meta property="twitter:image" content={socialImageURL} />
 		<script
 			type="text/partytown"
 			async
