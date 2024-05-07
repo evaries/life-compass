@@ -5,9 +5,9 @@ import '../styles/global.css'
 import '@fontsource-variable/montserrat'
 import ScrollButton from '../components/scroll-button.astro'
 // const socialImageURL = new URL('/social-card.png', Astro.url).href
-const socialImageURL = "https://life-compass.netlify.app/social-card.png"
+const socialImageURL = 'https://life-compass.netlify.app/social-card.png'
 // const canonicalURL = new URL(Astro.url.pathname, Astro.url)
-const canonicalURL = "https://life-compass.netlify.app"
+const canonicalURL = 'https://life-compass.netlify.app'
 ---
 
 <html lang="en">
@@ -31,31 +31,31 @@ const canonicalURL = "https://life-compass.netlify.app"
 		<meta name="robots" content="index, follow" />
 
 		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Find Your North Star in Life: A Guide to Purpose & Vision" />
+		<meta name="og:type" content="website" />
+		<meta name="og:title" content="Find Your North Star in Life: A Guide to Purpose & Vision" />
 		<meta
-			property="og:description"
+			name="og:description"
 			content="Discover how to find your purpose, create a vision, and build the lifestyle you dream of with this comprehensive guide."
 		/>
-		<meta property="og:url" content={canonicalURL} />
-		<meta property="og:site_name" content="/" />
-		<meta property="og:locale" content="en" />
-		<meta property="og:image" content={socialImageURL} />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
+		<meta name="og:url" content={canonicalURL} />
+		<meta name="og:site_name" content="/" />
+		<meta name="og:locale" content="en" />
+		<meta name="og:image" content={socialImageURL} />
+		<meta name="og:image:width" content="1200" />
+		<meta name="og:image:height" content="630" />
 
 		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={canonicalURL} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content={canonicalURL} />
 		<meta
-			property="twitter:title"
+			name="twitter:title"
 			content="Find Your North Star in Life: A Guide to Purpose & Vision"
 		/>
 		<meta
-			property="twitter:description"
+			name="twitter:description"
 			content="Discover how to find your purpose, create a vision, and build the lifestyle you dream of with this comprehensive guide."
 		/>
-		<meta property="twitter:image" content={socialImageURL} />
+		<meta name="twitter:image" content={socialImageURL} />
 		<script
 			type="text/partytown"
 			async
